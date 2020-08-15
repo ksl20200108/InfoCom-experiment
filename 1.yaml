@@ -1,0 +1,133 @@
+version: '2'
+
+services:
+  couchdb1:
+    image: hyperledger/fabric-couchdb
+    container_name: c1
+    ports:
+      - 5984:5984
+  
+  couchdb2:
+    image: hyperledger/fabric-couchdb
+    container_name: c2
+    ports:
+      - 5985:5984
+
+  couchdb3:
+    image: hyperledger/fabric-couchdb
+    container_name: c3
+    ports:
+      - 5986:5984
+
+  couchdb4:
+    image: hyperledger/fabric-couchdb
+    container_name: c4
+    ports:
+      - 5987:5984
+
+  couchdb5:
+    image: hyperledger/fabric-couchdb
+    container_name: c5
+    ports:
+      - 5988:5984
+
+  couchdb6:
+    image: hyperledger/fabric-couchdb
+    container_name: c6
+    ports:
+      - 5989:5984
+
+  couchdb7:
+    image: hyperledger/fabric-couchdb
+    container_name: c7
+    ports:
+      - 5990:5984
+
+  couchdb8:
+    image: hyperledger/fabric-couchdb
+    container_name: c8
+    ports:
+      - 5991:5984
+
+  couchdb9:
+    image: hyperledger/fabric-couchdb
+    container_name: c9
+    ports:
+      - 5992:5984
+
+  couchdb10:
+    image: hyperledger/fabric-couchdb
+    container_name: c10
+    ports:
+      - 5993:5984
+
+  couchdb11:
+    image: hyperledger/fabric-couchdb
+    container_name: c11
+    ports:
+      - 5994:5984
+
+  couchdb12:
+    image: hyperledger/fabric-couchdb
+    container_name: c12
+    ports:
+      - 5995:5984
+
+  couchdb13:
+    image: hyperledger/fabric-couchdb
+    container_name: c13
+    ports:
+      - 5996:5984
+
+  couchdb14:
+    image: hyperledger/fabric-couchdb
+    container_name: c14
+    ports:
+      - 5997:5984
+
+  couchdb15:
+    image: hyperledger/fabric-couchdb
+    container_name: c15
+    ports:
+      - 5998:5984
+
+  couchdb16:
+    image: hyperledger/fabric-couchdb
+    container_name: c16
+    ports:
+      - 5999:5984
+
+  couchdb17:
+    image: hyperledger/fabric-couchdb
+    container_name: c17
+    ports:
+      - 6000:5984
+
+  couchdb18:
+    image: hyperledger/fabric-couchdb
+    container_name: c18
+    ports:
+      - 6001:5984
+
+  couchdb19:
+    image: hyperledger/fabric-couchdb
+    container_name: c19
+    ports:
+      - 6002:5984
+
+  couchdb20:
+    image: hyperledger/fabric-couchdb
+    container_name: c20
+    ports:
+      - 6003:5984
+
+  couchdb21:
+    image: hyperledger/fabric-couchdb
+    container_name: c21
+    ports:
+      - 6004:5984
+
+networks: 
+  default:
+    external: 
+      name: genesis  # docker network create --subnet=192.168.118.0/24 genesis

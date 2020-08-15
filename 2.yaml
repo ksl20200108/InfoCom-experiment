@@ -1,0 +1,50 @@
+version: '2'
+
+services:
+  net_check1:
+    image: net_check:1.0
+    container_name: k1
+    environment:
+      - DB_URL=1
+      - LOCAL_IP="192.168.118.131"
+    ports:
+      - 5678:5678
+    privileged: true
+    volumes:
+      - ./conf1.py:/run/conf.py
+      - ./base58.py:/run/base58.py
+      - ./block.py:/run/block.py
+      - ./block_chain.py:/run/block_chain.py
+      - ./block_header.py:/run/block_header.py
+      - ./cli1.py:/run/cli.py
+      - ./db.py:/run/db.py
+      - ./errors.py:/run/errors.py
+      - ./merkle.py:/run/merkle.py
+      - ./network.py:/run/network.py
+      - ./packing.py:/run/packing.py
+      - ./pow.py:/run/pow.py
+      - ./random_distributions.py:/run/random_distributions.py
+      - ./random_distribution2.py:/run/random_distribution2.py
+      - ./rpcserver.py:/run/rpcserver.py
+      - ./sorting.py:/run/sorting.py
+      - ./stopmine.py:/run/stopmine.py
+      - ./transactions.py:/run/transactions.py
+      - ./txpool.py:/run/txpool.py
+      - ./utils.py:/run/utils.py
+      - ./utxo.py:/run/utxo.py
+      - ./wallet.py:/run/wallet.py
+      - ./wallets.py:/run/wallets.py
+      - ./wallet.dat:/run/wallet.dat
+      - ./PDF2.txt:/run/PDF2.txt
+      - ./data.txt:/run/data.txt
+      - ./address.txt:/run/address.txt
+      - ./u1.txt:/run/u.txt
+    networks:
+      default:
+        ipv4_address: 192.168.118.131
+
+
+networks:
+  default:
+    external:
+      name: genesis  # docker network create --subnet=192.168.118.0/24 genesis
