@@ -38,7 +38,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u2.txt:/run/u.txt
     networks: 
       default: 
@@ -81,7 +80,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u3.txt:/run/u.txt
     networks: 
       default: 
@@ -124,7 +122,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u4.txt:/run/u.txt
     networks: 
       default: 
@@ -167,7 +164,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u5.txt:/run/u.txt
     networks: 
       default: 
@@ -210,7 +206,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u6.txt:/run/u.txt
     networks: 
       default: 
@@ -253,7 +248,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u7.txt:/run/u.txt
     networks:
       default:
@@ -296,7 +290,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u8.txt:/run/u.txt
     networks:
       default:
@@ -339,7 +332,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u9.txt:/run/u.txt
     networks:
       default:
@@ -382,7 +374,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u10.txt:/run/u.txt
     networks:
       default:
@@ -425,7 +416,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u11.txt:/run/u.txt
     networks:
       default:
@@ -468,7 +458,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data12.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -521,7 +510,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data13.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -574,7 +562,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data14.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -627,7 +614,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data15.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -680,7 +666,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data16.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -733,7 +718,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data17.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -786,7 +770,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data18.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -839,7 +822,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data19.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -892,7 +874,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data20.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
@@ -945,7 +926,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data21.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./shit.txt:/run/shit.txt
       - ./u1.txt:/run/u1.txt
       - ./u2.txt:/run/u2.txt
       - ./u3.txt:/run/u3.txt
