@@ -38,7 +38,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u2.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks: 
       default: 
         ipv4_address: 192.168.118.132
@@ -80,7 +80,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u3.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks: 
       default: 
         ipv4_address: 192.168.118.133
@@ -122,7 +122,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u4.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks: 
       default: 
         ipv4_address: 192.168.118.134
@@ -164,7 +164,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u5.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks: 
       default: 
         ipv4_address: 192.168.118.135
@@ -206,7 +206,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u6.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks: 
       default: 
         ipv4_address: 192.168.118.136
@@ -248,7 +248,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u7.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.137
@@ -290,7 +290,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u8.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.138
@@ -332,7 +332,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u9.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.139
@@ -374,7 +374,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u10.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.140
@@ -416,7 +416,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u11.txt:/run/u.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.141
@@ -458,17 +458,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data12.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.142
@@ -510,17 +500,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data13.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.143
@@ -562,17 +542,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data14.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.144
@@ -614,17 +584,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data15.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.145
@@ -666,17 +626,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data16.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.146
@@ -718,17 +668,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data17.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.147
@@ -770,17 +710,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data18.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.148
@@ -822,17 +752,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data19.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.149
@@ -874,17 +794,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data20.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.150
@@ -926,17 +836,7 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data21.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u1.txt
-      - ./u2.txt:/run/u2.txt
-      - ./u3.txt:/run/u3.txt
-      - ./u4.txt:/run/u4.txt
-      - ./u5.txt:/run/u5.txt
-      - ./u6.txt:/run/u6.txt
-      - ./u7.txt:/run/u7.txt
-      - ./u8.txt:/run/u8.txt
-      - ./u9.txt:/run/u9.txt
-      - ./u10.txt:/run/u10.txt
-      - ./u11.txt:/run/u11.txt
+      - ./shit.txt:/run/shit.txt
     networks:
       default:
         ipv4_address: 192.168.118.151

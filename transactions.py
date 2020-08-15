@@ -172,27 +172,30 @@ class Transaction(object):
             sign = sk.sign(tx_copy.txid.encode())
             self.vins[in_id].signature = binascii.hexlify(sign).decode()
 
-    def verify(self, prev_txs=None):
-        # if self.is_coinbase():
-        #     return True
-        # tx_copy = self._trimmed_copy()
-        #
-        # for in_id, vin in enumerate(self.vins):
-        #     prev_tx = prev_txs.get(vin.txid, None)
-        #     if not prev_tx:
-        #         raise ValueError('Previous transaction is error')
-        #     tx_copy.vins[in_id].signature = None
-        #     tx_copy.vins[in_id].pub_key = prev_tx.vouts[vin.vout].pub_key_hash
-        #     tx_copy.set_id()
-        #     tx_copy.vins[in_id].pub_key = None
-        #
-        #     sign = binascii.unhexlify(self.vins[in_id].signature)
-        #     vk = ecdsa.VerifyingKey.from_string(
-        #         binascii.a2b_hex(vin.pub_key), curve=ecdsa.SECP256k1)
+    def verify(self, prev_txs):
+        if self.is_coinbase():
+            return True
+        tx_copy = self._trimmed_copy()
+
+        for in_id, vin in enumerate(self.vins):
+            prev_tx = prev_txs.get(vin.txid, None)
+            if not prev_tx:
+                raise ValueError('Previous transaction is error')
+            tx_copy.vins[in_id].signature = None
+            tx_copy.vins[in_id].pub_key = prev_tx.vouts[vin.vout].pub_key_hash
+            tx_copy.set_id()
+            tx_copy.vins[in_id].pub_key = None
+
+            sign = binascii.unhexlify(self.vins[in_id].signature)
+            vk = ecdsa.VerifyingKey.from_string(
+                binascii.a2b_hex(vin.pub_key), curve=ecdsa.SECP256k1)
             # if not vk.verify(sign, tx_copy.txid.encode()):
             #     return False
 
-        end_time = time.time()
-        if (end_time - self.generation_time) > 660:
-            return False
+        # end_time = time.time()  # change
+        # if (end_time - self.generation_time) > 1200 : # 1200:    # change
+            # return False    # change
         return True
+
+    # def calculate_fee_size_ratio(self, fee): # change
+    #     return fee / (sys.getsizeof(self.vins) + sys.getsizeof(self.vouts) + sys.getsizeof(self.generation_time) + sys.getsizeof(self.amount))

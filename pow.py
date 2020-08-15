@@ -3,6 +3,7 @@ import time
 import sys
 import utils
 from errors import NonceNotFoundError
+import pdb  # 7.11
 from stopmine import StopMine
 
 class ProofOfWork(object):
@@ -29,6 +30,7 @@ class ProofOfWork(object):
         nonce = 0
         found = False
         hash_hex = None
+        # print('Mining a new block')   # change delete
         while nonce < self.MAX_SIZE:
             data = self._prepare_data(nonce)
             hash_hex = utils.sum256_hex(data)
@@ -46,7 +48,7 @@ class ProofOfWork(object):
                 try:
                     st = StopMine()
                     if st.h >= st.mine_h:
-                       raise NonceNotFoundError
+                        raise NonceNotFoundError
                     time.sleep(1)
                 except:
                     time.sleep(1)

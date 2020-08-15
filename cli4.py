@@ -17,6 +17,9 @@ from transactions import *
 from db import *
 import couchdb
 import random
+import pdb  # 7.11
+# import sys # change
+# from sorting import *   # change
 
 
 def new_parser():
@@ -286,23 +289,11 @@ def main():
 
 def client4():
     fo = open("data.txt", "w")
+    fo.truncate()
+
     time.sleep(60)
     t1 = threading.Thread(target=finding_new_block, args=())
     t1.start()
-    j = 0
-    m_total_payoff = 0
-    u_total_payoff = 0
-    users = {
-        '"192.168.118.131"': -0.5, '"192.168.118.132"': -0.5, '"192.168.118.133"': -0.5,
-        '"192.168.118.134"': -0.5, '"192.168.118.135"': -0.5, '"192.168.118.136"': -0.5,
-        '"192.168.118.137"': -0.5, '"192.168.118.138"': -0.5, '"192.168.118.139"': -0.5,
-        '"192.168.118.140"': -0.5, '"192.168.118.141"': -0.5}
-    for i in range(1, 12):
-        file_name = 'u' + str(i) + '.txt'
-        f2 = open(file_name, 'r')
-        for line in f2:
-            if line[0] != 'y':
-                users['"' + "192.168.118." + str(130+i) + '"'] = 0
 
     while True:
         try:
@@ -315,6 +306,11 @@ def client4():
         except:
             time.sleep(30)
 
+    j = 0
+    m_total_payoff = 0
+    u_total_payoff = 0
+    users = {}
+
     for i in range(0, 12):
         j += 1
         blo = None
@@ -324,10 +320,11 @@ def client4():
         txs = blo._transactions
         if len(txs) > 1:
             tx = txs[1]
+            u_total_payoff += (1.33 - tx.amount - 0.05*j)
             m_total_payoff += (tx.amount - 0.1 - 0.9)
             if tx.ip in users.keys():
-                users[tx.ip] = (1.33 - tx.amount - 0.05*j)
-            elif tx.ip:
+                users[tx.ip] += (1.33 - tx.amount - 0.05*j)
+            else:
                 users[tx.ip] = (1.33 - tx.amount - 0.05*j)
         fo.write(str(blo.serialize()))
         fo.write('\n')
@@ -337,8 +334,6 @@ def client4():
     fo.write("m_total_payoff: ")
     fo.write(str(m_total_payoff))
     fo.write("\n")
-    for key in users:
-        u_total_payoff += users[key]
     fo.write("u_total_payoff: ")
     fo.write(str(u_total_payoff))
     for key in users:

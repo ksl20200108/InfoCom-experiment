@@ -38,7 +38,6 @@ services:
       - ./PDF2.txt:/run/PDF2.txt
       - ./data.txt:/run/data.txt
       - ./address.txt:/run/address.txt
-      - ./u1.txt:/run/u.txt
     networks:
       default:
         ipv4_address: 192.168.118.131
