@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  net_check2:
+  net_check2:    # name of the service is "net_check2" which can be referred to when needed
     image: net_check:1.0
     container_name: k2
     environment:
