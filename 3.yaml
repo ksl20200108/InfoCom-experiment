@@ -8,7 +8,7 @@ services:
       - DB_URL=2
       - LOCAL_IP="192.168.118.132"
     ports:
-      - 5679:5678
+      - 5679:5678    # map local port "5679" to (":") docker port ("5678"). Container listens by binding ("5678")
     privileged: true    # so that the container has the root priviliges
     volumes:
       - ./conf2.py:/run/conf.py    # copy from local "conf2.py" and paste as "conf.py" (the rightmost) under the directory "run"
